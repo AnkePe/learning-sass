@@ -58,13 +58,36 @@ a{
 
 
 /* objects
+
 */
-header{
+.o-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 15px;
+    
+}
+
+.o-flex__item {
+    width: 95%;
+    border-radius: 15px;
+}
+
+.o-flex__header {
     background-color: $black;
     color: $white;
     font-family: $titleFontFamily;
     text-align: center;
 }
+
+/*header{
+    background-color: $black;
+    color: $white;
+    font-family: $titleFontFamily;
+    text-align: center;
+}
+*/
 /* Components
 */
 
