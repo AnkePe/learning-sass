@@ -1,0 +1,70 @@
+//stil commentaar
+//is niet zichtbaar in css
+
+/* variables
+*/
+//fonts
+$titleFontFamily: 'Staatliches', cursive;
+$baseFontFamily: 'Dosis', sans-serif;
+//font size
+$baseFontSize: 16;
+//colors
+// black
+$black: rgba(0, 0, 0, 0.5);
+// white
+$white: hsla(0, 0%, 100%, 1);
+// gray
+$gray: hsla(0, 0%, 50%, 1);
+
+/* functions
+*/
+@function rem($pixels) {
+    @return $pixels / $baseFontSize * 1rem;
+  }
+/* mixins
+*/
+
+/* elements
+*/
+body{
+    background-color: $gray;
+    margin: 0;
+       
+}
+p{
+    color: $white;
+    font-family: $baseFontFamily;
+}
+h1 {
+    font-size: rem(40);    
+    padding: 25px;
+}
+
+nav{
+    //text-align: center;
+
+    li{
+        display: inline-block;
+        padding: 0 30px 20px;        
+        font-size: rem(22);
+    }
+}
+
+a{
+    text-decoration: none;
+    color: $white;
+}
+
+
+
+/* objects
+*/
+header{
+    background-color: $black;
+    color: $white;
+    font-family: $titleFontFamily;
+    text-align: center;
+}
+/* Components
+*/
+
